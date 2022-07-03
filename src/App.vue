@@ -3,17 +3,21 @@
   <aside class="aside">
     <TwitterSearchBox />
   </aside>
-  <article class="article"></article>
+  <article class="article">
+    <TwitterResultList />
+  </article>
 </main>
 </template>
 
 <script>
 import TwitterSearchBox from './components/TwitterSearchBox.vue';
+import TwitterResultList from './components/TwitterResultList.vue';
 
 export default {
   name: 'App',
   components: {
     TwitterSearchBox,
+    TwitterResultList,
   },
 };
 </script>
