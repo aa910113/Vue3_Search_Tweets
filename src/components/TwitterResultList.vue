@@ -9,6 +9,7 @@
     </li>
   </ul>
 </template>
+
 <script>
 import { onBeforeMount, ref, reactive } from 'vue';
 import axios from 'axios';
@@ -28,6 +29,7 @@ export default {
           params: {
             query: '台灣',
             expansions: 'author_id',
+            'tweet.fields': 'created_at',
             'user.fields': 'username,profile_image_url',
           },
           headers: { Authorization: `Bearer ${process.env.VUE_APP_TOKEN}` },
