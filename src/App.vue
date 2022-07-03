@@ -1,18 +1,27 @@
 <template>
 <main class="container main">
-  <aside class="aside"></aside>
-  <article class="article"></article>
+  <aside class="aside">
+    <TwitterSearchBox />
+  </aside>
+  <article class="article">
+    <TwitterResultList />
+  </article>
 </main>
 </template>
 
 <script>
+import TwitterSearchBox from './components/TwitterSearchBox.vue';
+import TwitterResultList from './components/TwitterResultList.vue';
 
 export default {
   name: 'App',
-  components: {},
+  components: {
+    TwitterSearchBox,
+    TwitterResultList,
+  },
 };
 </script>
 
 <style lang="scss">
-@import './assets/scss/main';
+@import './assets/scss/all';
 </style>
