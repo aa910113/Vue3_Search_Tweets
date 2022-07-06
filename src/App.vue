@@ -1,12 +1,18 @@
 <template>
-<main class="container main">
-  <aside class="aside">
-    <TwitterSearchBox />
-  </aside>
-  <article class="article">
-    <TwitterResultList />
-  </article>
-</main>
+  <main class="container main">
+    <aside class="aside">
+      <TwitterSearchBox />
+    </aside>
+    <article class="article">
+      <TwitterResultList />
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </article>
+  </main>
 </template>
 
 <script>

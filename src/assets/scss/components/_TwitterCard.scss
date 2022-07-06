@@ -1,12 +1,7 @@
 .card{
-  border-bottom: 1px solid rgb(47, 51, 54);
   display: flex;
   &-header{
-    flex-basis: 48px;
     margin-right: 12px;
-    // height: calc(100% - 4px);
-    // width: calc(100% - 4px);
-    // border-radius: 9999px;
   }
   &-img{
     border-radius: 50%;
@@ -16,9 +11,5 @@
   }
   &-date{
     margin: 10px 0 0 0;
-  }
-  &-body{
-    flex-basis: 0;
-    flex-grow: 1;
   }
 }
