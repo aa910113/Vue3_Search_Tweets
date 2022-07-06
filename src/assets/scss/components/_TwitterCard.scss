@@ -1,0 +1,15 @@
+.card{
+  display: flex;
+  &-header{
+    margin-right: 12px;
+  }
+  &-img{
+    border-radius: 50%;
+  }
+  &-name{
+    margin: 0 0 10px 0;
+  }
+  &-date{
+    margin: 10px 0 0 0;
+  }
+}
